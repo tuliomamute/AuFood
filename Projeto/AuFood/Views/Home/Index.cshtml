@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section scripts
+    {
+    <script>
+
+        (function ($) {
+            $(function () {
+
+                $('.button-collapse').sideNav();
+                $('.parallax').parallax();
+
+            }); // end of document ready
+        })(jQuery); // end of jQuery name space
+    </script>
+    <script>
+        var options = [
+            {
+                selector: '#staggered-test', offset: 500, callback: function (el) {
+                    Materialize.showStaggeredList($(el));
+                }
+            }
+        ];
+        Materialize.scrollFire(options);
+    </script>
+}
+
+<div class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+            <h1 class="header center white-text text-lighten-2">Au Food</h1>
+            <div class="row center">
+                <h5 class="header col s12 light white-text">Comida Boa pra Cachorro!</h5>
+            </div>
+            <div class="row center">
+                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light indigo darken-1 lighten-1">Conheça nossos Produtos!</a>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <div class="parallax"><img src="~/Images/background2.jpg"></div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h2 class="header">Diferenciais</h2>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <ul id="staggered-test">
+                <li>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-green-text"><i class="material-icons icons-size">flash_on</i></h2>
+                            <h5 class="center">Alimentação Natural Balanceada e Cozida</h5>
+                            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-green-text"><i class="material-icons icons-size">group</i></h2>
+                            <h5 class="center">Biscoitos e Bifinhos 100% Naturais</h5>
+                            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-green-text"><i class="material-icons icons-size">settings</i></h2>
+                            <h5 class="center">Encomendas para festas PET's</h5>
+                            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="parallax-container">
+    <div class="parallax"><img src="~/Images/background1.jpg"></div>
+</div>

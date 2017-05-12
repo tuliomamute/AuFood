@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="theme-color" content="#3949ab">
+
+    <title>Au Food - Comida Boa pra Cachorro!</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <nav class="indigo darken-4" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Produtos</a></li>
+
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Navbar Link</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Produtos</a></li>
+
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <footer class="page-footer indigo darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l3 s12">
+                    <h5 class="white-text">Contato</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Email: aufoodmg@gmail.com</a></li>
+                        <li><a class="white-text" href="#!">Telefone: (31) 98743-0189</a></li>
+                        <li><a class="white-text" href="#!">Facebook: aufoodmg</a></li>
+                        <li><a class="white-text" href="#!">Instagram: aufoodmg</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright indigo darken-3">
+            <div class="container">
+                @@Criado por <a class="white-text text-lighten-3" href="http://materializecss.com">Au Food</a>
+            </div>
+        </div>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/materialize")
+    @RenderSection("scripts", required: false)
+
+</body>
+
+</html>
