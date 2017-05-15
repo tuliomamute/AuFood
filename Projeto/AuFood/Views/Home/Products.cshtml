@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Produtos";
+}
+
+@section scripts
+    {
+    <script>
+
+        (function ($) {
+            $(function () {
+
+                $('.button-collapse').sideNav();
+                $('.parallax').parallax();
+
+            }); // end of document ready
+        })(jQuery); // end of jQuery name space
+    </script>
+    <script>
+        var options = [
+            {
+                selector: '#staggered-test', offset: 500, callback: function (el) {
+                    Materialize.showStaggeredList($(el));
+                }
+            }
+        ];
+        Materialize.scrollFire(options);
+    </script>
+}
+
+    <div class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br />
+                <h1 class="header left white-text text-lighten-2">Produtos</h1>
+            </div>
+        </div>
+        <div class="parallax"><img src="~/Images/background3.jpg" /></div>
+    </div>
+
+<div class="container list-cards">  
+    <ul id="staggered-test">
+        <li>
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="~/Images/background1.jpg">
+                </div>
+
+                <div class="card-content">
+                    <p><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</i></p>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="card horizontal">
+                <div class="card-content">
+                    <p><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</i></p>
+                </div>
+                <div class="card-image">
+                    <img src="~/Images/background2.jpg">
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="~/Images/background1.jpg">
+                </div>
+
+                <div class="card-content">
+                    <p><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</i></p>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="card horizontal">
+                <div class="card-content">
+                    <p><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</i></p>
+                </div>
+                <div class="card-image">
+                    <img src="~/Images/background2.jpg">
+                </div>
+            </div>
+        </li>
+
+    </ul>
+</div>
+

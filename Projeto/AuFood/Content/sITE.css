@@ -1,3 +1,15 @@
 ﻿.icons-size {
     font-size: 54px
 }
+
+.list-align-left {
+    text-align: right
+}
+
+.reduced-width {
+    max-width: 50% !important
+}
+
+.list-cards {
+    width: 90% !important
+}
