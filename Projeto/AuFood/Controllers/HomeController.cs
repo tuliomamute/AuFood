@@ -16,5 +16,10 @@ namespace AuFood.Controllers
         {
             return View("Products");
         }
+    
+        public ActionResult AboutUs()
+        {
+            return View("AboutUs");
+        }
     }
 }
